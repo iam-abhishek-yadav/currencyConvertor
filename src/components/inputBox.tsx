@@ -37,7 +37,7 @@ const InputBox: React.FC<InputBoxProps> = ({
 					type='number'
 					placeholder='Amount'
 					disabled={amountDisable}
-					value={amount || ""} // Ensure amount is not null or undefined
+					value={amount || ""}
 					onChange={(e) =>
 						onAmountChange && onAmountChange(Number(e.target.value))
 					}
